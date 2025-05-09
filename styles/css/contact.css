@@ -1,1 +1,25 @@
-/*# sourceMappingURL=contact.css.map */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #42a5f5;
+  color: white;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+  width: 100%;
+  margin-top: 15px;
+  background-color: #6B7280;
+  border: 5px black;
+}
+nav h1 {
+  font-size: 36px;
+}
+nav section ul li {
+  display: flex;
+  justify-content: space-evenly;
+}
+nav section ul li a {
+  color: white;
+}/*# sourceMappingURL=contact.css.map */
