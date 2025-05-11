@@ -1,4 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     background-color: #42a5f5;
@@ -16,25 +22,39 @@ nav{
         font-size: 36px;
     }
     ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
         li{
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
+            align-items: center;
             a{
+                text-decoration: none;
                 color: white;
             }
         }
     }
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 670px){
     nav{
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
+      align-items: center;
+      height: 80px;
       ul{
+        justify-content: space-evenly;
         li{
+            justify-content: center;
             a{
                 margin: 0.7em;
+                padding-top: 10px;
+                padding-bottom: 10px;
             }
         }
       }

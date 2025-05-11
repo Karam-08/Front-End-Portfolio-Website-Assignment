@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="path/to/jquery-3.7.1.min.js"></script>
-    <link rel="stylesheet" href="../styles/css/home.css">
+    <link rel="stylesheet" href="../styles/home.css">
     <title>Home</title>
 </head>
 <body>
     <nav>
         <h1>Karam Abbas</h1>
+        <button class="menu-toggle">Menu</button>
         <section>
             <ul>
-                <li><a href="./projects.html">My Projects</a><a href="./about me.html">About Me</a><a href="./contact.html">Contact Page</a></li>
+                <li><a href="./projects.html">My Projects</a></li>
+                <li><a href="./about me.html">About Me</a></li>
+                <li><a href="./contact.html">Contact Page</a></li>
             </ul>
         </section>
     </nav>
-    <section>
-        <img src="../Images/image.jpg" alt="Image of me" width="300px" height="400px">
-        <h2>Introduction</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellat excepturi sed nostrum iusto blanditiis eum sint nam, dolorem autem!</p>
-    </section>
+<section class="intro">
+    <div class="intro-content">
+        <img src="../Images/image.jpg" alt="Image of me" width="300" height="400">
+        <div class="intro-text">
+            <h1>Introduction</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellat excepturi sed nostrum iusto blanditiis eum sint nam, dolorem autem!</p>
+        </div>
+    </div>
+</section>
 </body>
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous">
+</script>
 <script src="../JS/home.js"></script>
 </html>
