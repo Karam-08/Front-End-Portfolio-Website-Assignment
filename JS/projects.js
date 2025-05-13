@@ -16,10 +16,7 @@ $(document).ready(function(){
     //Create a function that will start the slider
     function startSlider(){
         interval = setInterval(function(){
-            $sliderContainer.animate({'margin-left':'-='+width},
-                // It will do this animation speed every time for this long
-            
-                animationSpeed,
+            $sliderContainer.animate({'margin-left':'-='+width}, animationSpeed,
                 // After the animation is com plete we can run the callback function() at the end if we want
                 function(){
                     // Track the current slide

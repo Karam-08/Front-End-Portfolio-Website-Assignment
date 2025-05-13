@@ -10,6 +10,7 @@
 <body>
     <nav>
         <h1>Karam Abbas</h1>
+        <button class="menu-toggle">Menu</button>
         <section>
             <ul>
                 <li><a href="./projects.html">My Projects</a><a href="./about me.html">About Me</a><a href="./home.html">Home</a></li>
@@ -17,21 +18,27 @@
         </section>
     </nav>
     <h2>Contact form</h2>
-    <section>
+    <form id="contact">
         <div>
             <h3>First and last name:</h3>
-            <input type="text">
+            <input type="text" id="name" name="name" placeholder="EX: Karam Abbas">
             <h3>Email:</h3>
-            <input type="text">
+            <input type="text" id="email" name="email" placeholder="EX: example@gmail.com">
             <h3>Phone Number:</h3>
-            <input type="text">
+            <input type="text" id="number" name="number" placeholder="EX: 123-456-7890">
         </div>
         <div>
-            <h3>Message</h3>
-            <textarea name="" id="" type="text"></textarea>
+            <h3>Message:</h3>
+            <textarea name="message" id="message" type="text" placeholder="Optional, but is recommended"></textarea>
         </div>
-        <button onclick="submitForm()">Submit</button>
-    </section>
+        <button id="submit">Submit</button>
+    </form>
 </body>
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous">
+</script>
 <script src="../JS/contact.js"></script>
+<script src="../JS/navbar.js"></script>
 </html>
