@@ -4,6 +4,7 @@ $(document).ready(function(){
     var pause = animationSpeed + 1000
     var currentSlide = 1
 
+<<<<<<< HEAD
     // Cached DOM elements
     var $sliderContainer = $('.slides')  
     var $slides = $('.slide')
@@ -43,3 +44,4 @@ $(document).ready(function(){
     }
     startSlider()
 })
+>>>>>>> efbf8b5569ae0cd317bcfc24d985ecfa9b0850d3
