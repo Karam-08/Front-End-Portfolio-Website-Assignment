@@ -2,32 +2,32 @@
 
 *,
 *::before,
-*::after {
+*::after{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-h1 {
+h1{
   text-align: center;
 }
 
-#slider {
+#slider{
   width: 720px;
-  height: 400px;
   overflow: hidden;
   margin: auto;
-}
-#slider .slides {
+  h2{
+    margin-bottom: 10px;
+  }
+  .slides{
   display: block;
-  width: 6000px;
+  width: 9999px;
   height: 400px;
   margin: 0;
   padding: 0;
-}
-#slider .slide {
-  float: left;
-  width: 720px;
-  height: 400px;
-  list-style-type: none;
+  transition: margin-left 0.5s;
+    .slide{
+      list-style-type: none;
+    }
+  }
 }
