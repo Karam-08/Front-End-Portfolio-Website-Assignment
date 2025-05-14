@@ -14,14 +14,8 @@ $(document).ready(function(){
             $(this).css('color', 'white');
             $(this).css('text-decoration', 'none')
         });
-
-    let toggle = true
+        
     $('.menu-toggle').click(function(){
-        if(toggle){
-            $('nav ul').slideUp(1000, 0.0)
-        }else{
-            $('nav ul').slideDown(1000, 0.0)
-        }
-        toggle = !toggle
+        $('.toggleHidden').toggleClass('toggleHidden')
     })
 });
