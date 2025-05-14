@@ -17,6 +17,14 @@ body {
   display: none;
 }
 
+nav ul {
+  display: none;
+}
+
+nav ul.active {
+  display: block;
+}
+
 nav {
   width: 100%;
   margin-top: 15px;
@@ -55,6 +63,9 @@ nav ul li a {
 }
 
 @media screen and (min-width: 670px) {
+  .menu-toggle {
+    display: none;
+  }
   nav {
     display: flex;
     flex-direction: row;
@@ -88,22 +99,20 @@ h1 {
 
 #slider {
   width: 720px;
-  height: 400px;
   overflow: hidden;
   margin: auto;
 }
-
+#slider h2 {
+  margin-bottom: 10px;
+}
 #slider .slides {
   display: block;
-  width: 6000px;
+  width: 9999px;
   height: 400px;
   margin: 0;
   padding: 0;
+  transition: margin-left 0.5s;
 }
-
-#slider .slide {
-  float: left;
-  width: 720px;
-  height: 400px;
+#slider .slides .slide {
   list-style-type: none;
 }/*# sourceMappingURL=projects.css.map */

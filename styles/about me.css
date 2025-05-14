@@ -17,6 +17,14 @@ body {
   display: none;
 }
 
+nav ul {
+  display: none;
+}
+
+nav ul.active {
+  display: block;
+}
+
 nav {
   width: 100%;
   margin-top: 15px;
@@ -55,6 +63,9 @@ nav ul li a {
 }
 
 @media screen and (min-width: 670px) {
+  .menu-toggle {
+    display: none;
+  }
   nav {
     display: flex;
     flex-direction: row;

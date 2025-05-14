@@ -16,6 +16,6 @@ $(document).ready(function(){
         });
         
     $('.menu-toggle').click(function(){
-        $('.toggleHidden').toggleClass('toggleHidden')
+        $('nav ul').toggleClass('toggleHidden')
     })
 });

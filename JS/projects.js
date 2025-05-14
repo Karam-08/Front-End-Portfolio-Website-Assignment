@@ -4,8 +4,6 @@ $(document).ready(function(){
     var pause = animationSpeed + 1000
     var currentSlide = 1
 
-<<<<<<< HEAD
-    // Cached DOM elements
     var $sliderContainer = $('.slides')  
     var $slides = $('.slide')
     var totalSlides = $slides.length
@@ -25,23 +23,3 @@ $(document).ready(function(){
     }  
     startSlider()  
 });
-=======
-    var $sliderContainer = $('.slides')
-    var $slides = $('.slide')
-    var interval;
-    
-    function startSlider(){
-        interval = setInterval(function(){
-            $sliderContainer.animate({'margin-left':'-=' + width}, animationSpeed,
-                function(){
-                    currentSlide++
-                    if(currentSlide > $slides.length){
-                        currentSlide = 1
-                        $sliderContainer.css('margin-left', 0)
-                    }
-                })
-        },pause)
-    }
-    startSlider()
-})
->>>>>>> efbf8b5569ae0cd317bcfc24d985ecfa9b0850d3
