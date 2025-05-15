@@ -14,7 +14,7 @@ $(document).ready(function(){
             $sliderContainer.animate({'margin-left':'-='+width}, animationSpeed,  
                 function(){  
                     currentSlide++  
-                    if (currentSlide > totalSlides){  
+                    if (currentSlide === totalSlides){  
                         currentSlide = 1  
                         $sliderContainer.css('margin-left', 0)  
                     }  

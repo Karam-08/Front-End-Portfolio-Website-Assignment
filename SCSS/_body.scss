@@ -63,8 +63,11 @@ nav{
 }
 
 @media screen and (min-width: 670px){
-    .menu-toggle {
+    .menu-toggle{
         display: none;
+    }
+    .toggleHidden{
+        display: flex;
     }
     nav{
       display: flex;

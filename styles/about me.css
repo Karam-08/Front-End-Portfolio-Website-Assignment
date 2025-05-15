@@ -66,6 +66,9 @@ nav ul li a {
   .menu-toggle {
     display: none;
   }
+  .toggleHidden {
+    display: flex;
+  }
   nav {
     display: flex;
     flex-direction: row;

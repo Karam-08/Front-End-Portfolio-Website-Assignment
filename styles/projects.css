@@ -66,6 +66,9 @@ nav ul li a {
   .menu-toggle {
     display: none;
   }
+  .toggleHidden {
+    display: flex;
+  }
   nav {
     display: flex;
     flex-direction: row;
@@ -107,7 +110,7 @@ h1 {
 }
 #slider .slides {
   display: block;
-  width: 9999px;
+  width: 2160px;
   height: 400px;
   margin: 0;
   padding: 0;
