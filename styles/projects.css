@@ -109,13 +109,13 @@ h1 {
   margin-bottom: 10px;
 }
 #slider .slides {
-  display: block;
+  display: flex;
   width: 2160px;
-  height: 400px;
   margin: 0;
   padding: 0;
-  transition: margin-left 0.5s;
+  transition: none;
 }
 #slider .slides .slide {
+  width: 720px;
   list-style-type: none;
 }/*# sourceMappingURL=projects.css.map */

@@ -7,14 +7,18 @@ $(document).ready(function(){
     var $sliderContainer = $('.slides')  
     var $slides = $('.slide')
     var totalSlides = $slides.length
+
+    $sliderContainer.append($slides.first().clone());
+
     var interval;  
 
     function startSlider(){  
+        clearInterval(interval)
         interval = setInterval(function(){  
             $sliderContainer.animate({'margin-left':'-='+width}, animationSpeed,  
                 function(){  
                     currentSlide++  
-                    if (currentSlide === totalSlides){  
+                    if (currentSlide > totalSlides){  
                         currentSlide = 1  
                         $sliderContainer.css('margin-left', 0)  
                     }  
