@@ -1,11 +1,7 @@
 @import "body";
-
 #contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
     width: 50%;
+    transform: translateX(50%); // Shifts the form 50% to the right to center the form
     background-color: #6B7280;
     padding: 10px;
     border: 5px solid black;

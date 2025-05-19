@@ -68,6 +68,11 @@
 }
 
 @media screen and (min-width: 768px){
+    .profile-img{
+        width: 250px;
+        max-width: 100%;
+        margin: 0 20px;
+    }
     .intro-content{
         display: flex;
         flex-direction: row;
@@ -95,10 +100,6 @@
 }
 
 @media screen and (min-width: 1024px){
-    body{
-        max-width: 1200px;
-        margin: 0 auto;
-    }
     .profile-img{
         max-width: 300px;
     }

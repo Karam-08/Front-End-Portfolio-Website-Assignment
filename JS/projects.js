@@ -7,7 +7,7 @@ $(document).ready(function(){
     var $slides = $('.slide')
     var totalSlides = $slides.length
 
-    $sliderContainer.append($slides.first().clone());
+    $sliderContainer.append($slides.first().clone()); // Adds the 
 
     var interval;
 
@@ -19,7 +19,7 @@ $(document).ready(function(){
         clearInterval(interval)
         interval = setInterval(function(){
             var width = getSlideWidth(); 
-            $sliderContainer.animate({'margin-left':'-='+width}, animationSpeed,  
+            $sliderContainer.animate({'margin-left':'-=' + width}, animationSpeed,  
                 function(){  
                     currentSlide++  
                     if (currentSlide > totalSlides){  
@@ -33,7 +33,7 @@ $(document).ready(function(){
     $(window).on('resize', function(){
         $sliderContainer.css('margin-left', 0);
         currentSlide = 1
-        startSlider
+        startSlider();
     });
     startSlider()  
 });
