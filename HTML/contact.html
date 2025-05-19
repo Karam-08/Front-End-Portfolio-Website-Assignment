@@ -21,18 +21,27 @@
     <form id="contact">
         <div>
             <h3>First and last name:</h3>
-            <input type="text" id="name" name="name" placeholder="EX: Karam Abbas">
+            <input type="text" id="name" name="name" placeholder="EX: Karam Abbas" required>
             <h3>Email:</h3>
-            <input type="text" id="email" name="email" placeholder="EX: example@gmail.com">
+            <input type="email" id="email" name="email" placeholder="EX: example@gmail.com" required>
             <h3>Phone Number:</h3>
-            <input type="text" id="number" name="number" placeholder="EX: 123-456-7890">
+            <input type="text" id="number" name="number" placeholder="EX: 123-456-7890" required>
         </div>
         <div>
             <h3>Message:</h3>
-            <textarea name="message" id="message" type="text" placeholder="Optional, but is recommended"></textarea>
+            <textarea name="message" id="message" type="text" placeholder="Is Optional"></textarea>
         </div>
         <button id="submit">Submit</button>
     </form>
+
+    <div id="output"></div>
+
+    <footer id="follow">
+        <h3>Follow me:</h3>
+        <a href="https://twitter.com">🐦 Twitter</a>
+        <a href="https://linkedin.com">🔗 LinkedIn</a>
+        <a href="https://github.com">💻 GitHub</a>
+  </footer>
 </body>
 <script
   src="https://code.jquery.com/jquery-3.7.1.js"

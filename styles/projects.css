@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -5,24 +6,15 @@
 body {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
   background-color: #42a5f5;
   color: white;
-  text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
+/* Navigation */
 .toggleHidden {
   display: none;
-}
-
-nav ul {
-  display: none;
-}
-
-nav ul.active {
-  display: block;
 }
 
 nav {
@@ -50,6 +42,9 @@ nav ul {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+nav ul.active {
+  display: block;
 }
 nav ul li {
   display: flex;
@@ -96,26 +91,36 @@ nav ul li a {
   box-sizing: border-box;
 }
 
-h1 {
-  text-align: center;
-}
-
 #slider {
-  width: 720px;
+  width: 100%;
   overflow: hidden;
   margin: auto;
+  /*──────── Desktop breakpoint ────────*/
 }
 #slider h2 {
   margin-bottom: 10px;
 }
 #slider .slides {
   display: flex;
-  width: 2160px;
   margin: 0;
   padding: 0;
-  transition: none;
+  transition: transform 0.5s ease-in-out;
 }
 #slider .slides .slide {
-  width: 720px;
+  flex: 0 0 100%;
   list-style-type: none;
+}
+#slider .slides .slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#slider .slides .slide p {
+  padding: 10px;
+  font-size: 14px;
+}
+@media screen and (min-width: 670px) {
+  #slider {
+    width: 720px;
+  }
 }/*# sourceMappingURL=projects.css.map */

@@ -7,27 +7,40 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-h1{
-  text-align: center;
-}
-
-#slider{
-  width: 720px;
+#slider {
+  width: 100%;
   overflow: hidden;
   margin: auto;
-  h2{
-    margin-bottom: 10px;
-  }
-  .slides{
-  display: flex;
-  width: 2160px;
-  margin: 0;
-  padding: 0;
-  transition: none;
-    .slide{
-      width: 720px;
+
+  h2 { margin-bottom: 10px; }
+
+  .slides {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.5s ease-in-out;
+
+    .slide {
+      // CHANGE: replaced hard‑coded widths with flex shorthand
+      //         for one‑frame‑width items that adapt responsively
+      flex: 0 0 100%;
       list-style-type: none;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      p {
+        padding: 10px;
+        font-size: 14px;
+      }
     }
+  }
+
+  /*──────── Desktop breakpoint ────────*/
+  @media screen and (min-width: 670px) {
+    width: 720px;   // frame width; no other widths needed
   }
 }

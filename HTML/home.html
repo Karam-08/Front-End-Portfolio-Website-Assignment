@@ -1,38 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/home.css">
-    <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home</title>
+  <link rel="stylesheet" href="../styles/home.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-    <nav>
-        <h1>Karam Abbas</h1>
-        <button class="menu-toggle">Menu</button>
-        <section>
-            <ul class="toggleHidden">
-                <li><a href="./projects.html">My Projects</a></li>
-                <li><a href="./contact.html">Contact Page</a></li>
-            </ul>
-        </section>
-    </nav>
-<section class="intro">
-    <div class="intro-content">
-        <img src="../Images/image.jpg" alt="Image of me" width="300" height="400">
-        <div class="content">
-            <h1>Quote</h1>
-            <p class="text">Sucking at something is the first step towards being sorta good at something.</p>
-        </div>
-    </div>
-    <div class="content">
-        <h1>Introduction</h1>
-        <p class="text">Hello! My name is Karam and this is my Portfolio. I am currently a student at Sandra Day O'Connor High School. I am also enrolled in the West-MEC coding program. My favorite musical artist is Kanye West.</p>
-    </div>
-</section>
+  <!-- Navigation -->
+  <nav>
+    <h1>Karam Abbas</h1>
+    <button class="menu-toggle">Menu</button>
+    <section>
+      <ul class="toggleHidden">
+        <li><a href="./projects.html">My Projects</a></li>
+        <li><a href="./contact.html">Contact Page</a></li>
+      </ul>
+    </section>
+  </nav>
 
+  <!-- Introduction Section -->
+  <section class="intro">
+    <div class="intro-content">
+      <img src="../Images/image.jpg" alt="Image of me" class="profile-img" />
+      <div class="content">
+        <div class="card quote">
+          <h2>Quote</h2>
+          <blockquote>
+            “Sucking at something is the first step towards being sorta good at something.”
+          </blockquote>
+        </div>
+
+        <!-- Intro Text -->
+        <h1 id="introheader">Introduction</h1>
+        <div class="card">
+          <p>Hello! My name is Karam and this is my Portfolio. I am currently a student at Sandra Day O'Connor High School and enrolled in the West-MEC coding program. Designing websites is my favorite part of coding.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Biography -->
+  <section class="biography content">
+    <h1>Biography</h1>
+    <div class="card">
+      <p>I'm passionate about web development and constantly strive to improve my design and programming skills. I enjoy experimenting with websites and learning new frameworks in my free time.</p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="education content">
+    <h1>Education</h1>
+    <ul class="card">
+      <li><i class="fas fa-school"></i> Sandra Day O'Connor High School</li>
+      <li><i class="fas fa-laptop-code"></i> West-MEC Coding Program</li>
+    </ul>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills content">
+    <h1>Skills</h1>
+    <div class="skills-icons card">
+      <span><i class="fab fa-html5"></i> HTML</span>
+      <span><i class="fab fa-css3-alt"></i> CSS</span>
+      <span><i class="fab fa-js"></i> JavaScript</span>
+      <span><i class="fab fa-github"></i> GitHub</span>
+      <span><i class="fas fa-code"></i> VS Code</span>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="../JS/home.js"></script>
+  <script src="../JS/navbar.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-<script src="../JS/home.js"></script>
-<script src="../JS/navbar.js"></script>
 </html>

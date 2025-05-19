@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    var width = 720
     var animationSpeed = 2000
     var pause = animationSpeed + 1000
     var currentSlide = 1
@@ -10,11 +9,16 @@ $(document).ready(function(){
 
     $sliderContainer.append($slides.first().clone());
 
-    var interval;  
+    var interval;
+
+    function getSlideWidth(){
+        return $('#slider').width();
+    }
 
     function startSlider(){  
         clearInterval(interval)
-        interval = setInterval(function(){  
+        interval = setInterval(function(){
+            var width = getSlideWidth(); 
             $sliderContainer.animate({'margin-left':'-='+width}, animationSpeed,  
                 function(){  
                     currentSlide++  
@@ -24,6 +28,12 @@ $(document).ready(function(){
                     }  
                 })  
         },pause)  
-    }  
+    }
+    
+    $(window).on('resize', function(){
+        $sliderContainer.css('margin-left', 0);
+        currentSlide = 1
+        startSlider
+    });
     startSlider()  
 });
