@@ -51,9 +51,14 @@ nav ul li {
   align-items: center;
 }
 nav ul li a {
-  text-decoration: none;
+  background-color: #6B7280;
+  padding: 10px 15px;
+  border: 3px solid black;
+  border-radius: 8px;
+  font-weight: bold;
   color: white;
   margin: 10px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 @media screen and (min-width: 670px) {
@@ -108,6 +113,7 @@ nav ul li a {
 }
 .card .edulink,
 .card a {
+  margin: 10px 0;
   color: white;
   text-decoration: none;
 }
@@ -142,12 +148,13 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
 }
 .education li,
 .education span,
 .skills-icons li,
 .skills-icons span {
+  margin: 10px 0;
   background-color: #6B7280;
   padding: 10px 15px;
   border: 3px solid black;

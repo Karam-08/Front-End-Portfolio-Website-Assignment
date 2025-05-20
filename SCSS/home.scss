@@ -25,6 +25,7 @@
     max-width: 90%;
     .edulink,
     a{
+        margin: 10px 0;
         color: white;
         text-decoration: none;
         &:hover{
@@ -59,10 +60,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 16px;
     }
     li,
     span{
+        margin: 10px 0;
         background-color: #6B7280;
         padding: 10px 15px;
         border: 3px solid black;
