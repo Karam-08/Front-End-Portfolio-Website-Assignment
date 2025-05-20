@@ -20,13 +20,9 @@
     flex-direction: row;
     margin: 0;
     padding: 0;
-    transition: transform 0.5s ease-in-out;
     .slide{
-      // flex: 0 0 100%;
       list-style-type: none;
       img{
-        // width: 100%;
-        // height: auto;
         display: block;
       }
       p{
@@ -35,8 +31,25 @@
       }
     }
   }
+  .slider-controls{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    button{
+      background-color: #246396;
+      color: white;
+      border: 3px solid black;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+}
 
-  @media screen and (min-width: 670px) {
-    width: 720px;
+@media screen and (min-width: 670px){
+  #slider{
+    width: 720px
   }
 }

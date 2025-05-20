@@ -51,6 +51,7 @@ nav ul li {
   align-items: center;
 }
 nav ul li a {
+  text-decoration: none;
   background-color: #6B7280;
   padding: 10px 15px;
   border: 3px solid black;
@@ -113,7 +114,7 @@ nav ul li a {
 }
 .card .edulink,
 .card a {
-  margin: 10px 0;
+  margin: 10px;
   color: white;
   text-decoration: none;
 }

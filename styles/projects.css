@@ -51,6 +51,7 @@ nav ul li {
   align-items: center;
 }
 nav ul li a {
+  text-decoration: none;
   background-color: #6B7280;
   padding: 10px 15px;
   border: 3px solid black;
@@ -108,7 +109,6 @@ nav ul li a {
   flex-direction: row;
   margin: 0;
   padding: 0;
-  transition: transform 0.5s ease-in-out;
 }
 #slider .slides .slide {
   list-style-type: none;
@@ -120,6 +120,22 @@ nav ul li a {
   padding: 10px;
   font-size: 14px;
 }
+#slider .slider-controls {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#slider .slider-controls button {
+  background-color: #246396;
+  color: white;
+  border: 3px solid black;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
 @media screen and (min-width: 670px) {
   #slider {
     width: 720px;
