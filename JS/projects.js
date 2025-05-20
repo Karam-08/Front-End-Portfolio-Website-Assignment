@@ -1,8 +1,7 @@
 $(document).ready(function(){
-    var animationSpeed = 2000
-    var pause = animationSpeed + 1000
-    var currentSlide = 0
 
+    // Variables
+    var currentSlide = 0
     var $sliderContainer = $('.slides')  
     var $slides = $('.slide')
     var totalSlides = $slides.length
@@ -18,12 +17,12 @@ $(document).ready(function(){
     }
     
     $('#next').on('click', function(){
-        var nextSlide = (currentSlide + 1) % totalSlides;
+        var nextSlide = (currentSlide + 1) % totalSlides; // Next slide
         goToSlide(nextSlide)
     })
 
     $('#prev').on('click', function(){
-        var prevSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        var prevSlide = (currentSlide - 1 + totalSlides) % totalSlides; // Previous slide
         goToSlide(prevSlide)
     })
     
@@ -31,5 +30,5 @@ $(document).ready(function(){
         $sliderContainer.css('margin-left', 0);
         currentSlide = 1
     });
-    goToSlide(0)
+    goToSlide(0) // Goes to first slide on default
 });

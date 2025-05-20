@@ -1,12 +1,12 @@
 $("#contact").on('submit', function(e){
     e.preventDefault(); // Prevents the default action of submitting the form
 
-    const name = $('#name').val();
+    const name = $('#name').val(); // Gets values
     const email = $('#email').val();
     const phone = $('#number').val();
     const message = $('#message').val();
 
-    $("#output").html(
+    $("#output").html( // Displays the message details
         `<h3>Message Details</h3>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
