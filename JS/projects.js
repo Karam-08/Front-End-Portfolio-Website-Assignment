@@ -7,12 +7,12 @@ $(document).ready(function(){
     var $slides = $('.slide')
     var totalSlides = $slides.length
 
-    $sliderContainer.append($slides.first().clone()); // Adds the 
+    $sliderContainer.append($slides.first().clone()); // Makes the slideshow a seamless loop
 
     var interval;
 
     function getSlideWidth(){
-        return $('#slider').width();
+        return $('#slider').width(); // Returns slideshow width, no matter what size
     }
 
     function startSlider(){  
@@ -22,7 +22,7 @@ $(document).ready(function(){
             $sliderContainer.animate({'margin-left':'-=' + width}, animationSpeed,  
                 function(){  
                     currentSlide++  
-                    if (currentSlide > totalSlides){  
+                    if(currentSlide > totalSlides){  
                         currentSlide = 1  
                         $sliderContainer.css('margin-left', 0)  
                     }  
@@ -35,5 +35,5 @@ $(document).ready(function(){
         currentSlide = 1
         startSlider();
     });
-    startSlider()  
+    startSlider();
 });

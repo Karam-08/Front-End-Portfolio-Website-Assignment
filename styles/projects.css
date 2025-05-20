@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -95,24 +94,21 @@ nav ul li a {
   width: 100%;
   overflow: hidden;
   margin: auto;
-  /*──────── Desktop breakpoint ────────*/
 }
 #slider h2 {
   margin-bottom: 10px;
 }
 #slider .slides {
   display: flex;
+  flex-direction: row;
   margin: 0;
   padding: 0;
   transition: transform 0.5s ease-in-out;
 }
 #slider .slides .slide {
-  flex: 0 0 100%;
   list-style-type: none;
 }
 #slider .slides .slide img {
-  width: 100%;
-  height: auto;
   display: block;
 }
 #slider .slides .slide p {

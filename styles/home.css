@@ -106,6 +106,16 @@ nav ul li a {
   margin: 0 auto;
   max-width: 90%;
 }
+.card .edulink,
+.card a {
+  color: white;
+  text-decoration: none;
+}
+.card .edulink:hover,
+.card a:hover {
+  color: black;
+  text-decoration: underline;
+}
 
 .quote {
   font-style: italic;
@@ -170,6 +180,10 @@ nav ul li a {
   }
   .intro-content .content {
     max-width: 600px;
+  }
+  .intro-content .content #introheader {
+    display: flex;
+    text-align: center;
   }
   .education ul,
   .skills-icons {

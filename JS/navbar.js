@@ -7,11 +7,13 @@ $(document).ready(function(){
         }
     );
     $('nav ul li a').hover(function(){
-            $(this).css('color', '#FFD700');
+            $(this).css('background-color', '#FFD700');
+            $(this).css('color', 'black')
             $(this).css('text-decoration', 'underline')
         },
         function(){
-            $(this).css('color', 'white');
+            $(this).css('background-color', 'transparent');
+            $(this).css('color', 'white')
             $(this).css('text-decoration', 'none')
         });
         

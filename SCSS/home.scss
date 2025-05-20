@@ -23,6 +23,15 @@
     border: 4px solid black;
     margin: 0 auto;
     max-width: 90%;
+    .edulink,
+    a{
+        color: white;
+        text-decoration: none;
+        &:hover{
+            color: black;
+            text-decoration: underline;
+        }
+    }
 }
 
 .quote{
@@ -83,6 +92,10 @@
         padding: 20px;
         .content{
             max-width: 600px;
+            #introheader{
+                display: flex;
+                text-align: center;
+            }
         }
     }
     .education ul,
